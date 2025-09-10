@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#app{
+    min-height: 100vh;            
+    display: flex;
+    flex-direction: column;       
+    justify-content: center;      
+    align-items: center;          
+    gap: 8px;
+  }
+  .row { display: flex; gap: 10px; margin-bottom: 10px; }
+  .circle {
+    width: 150px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background: #60a5fa;
+  }
+  .selected{
+    background: yellow !important;
+  }
+
+    </style>
+</head>
+<body>
+    <button id="startbtn">Click here to start</button>
+    <div id="resulttext">your results:</div>
+    <div id="app"></div>
+    
+    <script src="./script/view.js" type="module"></script>
+</body>
+</html>
